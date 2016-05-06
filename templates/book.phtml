@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title><?php echo $book->name ?></title>
+    <link href='/resources/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="">
+                <h3><?php echo $book->name ?></h3>
+                <p><?php echo $book->firstname . ' ' . $book->lastname ?></p>
+                <div class="btn-group">
+                    <a class="btn btn-default" href="/edit/book/<?php echo $book->id ?>">Edit</a>
+                    <a class="btn btn-default" href="/delete/book/<?php echo $book->id ?>">Delete</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Books</title>
+    <link href='/resources/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+    <a href="/create/book" class="btn btn-default">Create Book</a>
+    <div class="row">
+        <div class="col-lg-12">
+            <?php foreach( $books as $book ) { ?>
+              <div class="">
+                  <h3><a href="/book/<?php echo $book->id ?>"><?php echo $book->name ?></a></h3>
+                  <p><?php echo $book->firstname . ' ' . $book->lastname ?></p>
+              </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+</body>
+</html>
